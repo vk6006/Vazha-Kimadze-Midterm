@@ -1,0 +1,8 @@
+<h1>Array from parent component</h1>
+<ul>
+  <li *ngFor="let user of parentUsers">
+    {{ user.Firstname }} {{ user.Lastname }} - {{ user.Email }}
+  </li>
+</ul>
+
+<button (click)="emitChildUsers()">Emit Child Users</button>
